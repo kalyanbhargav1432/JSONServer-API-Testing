@@ -4,6 +4,7 @@ import org.json.simple.JSONObject;
 import org.testng.annotations.Test;
 
 import io.restassured.RestAssured;
+import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
@@ -12,10 +13,12 @@ public class TestApi {
 	@Test
 	public void getTest() {
 		Response response = RestAssured.get("http://localhost:3000/posts");
-
 		System.out.println("Response code: " + response.getStatusCode());
-		response.prettyPrint();
-
+		JsonPath jsonPath = response.jsonPath();
+		// response.prettyPrint();
+		System.out.println(" id : " + jsonPath.get("id"));
+		System.out.println(" title : " + jsonPath.get("title"));
+		System.out.println(" author : " + jsonPath.get("author"));
 	}
 
 	@Test
@@ -23,7 +26,7 @@ public class TestApi {
 		RequestSpecification requestSpecification = RestAssured.given();
 		requestSpecification.header("Content-Type", "application/json");
 		JSONObject jsonObject = new JSONObject();
-		jsonObject.put("id", 2);
+		jsonObject.put("id", 3);
 		jsonObject.put("title", "kalyanpost");
 		jsonObject.put("author", "myauthor");
 		requestSpecification.body(jsonObject.toJSONString());
@@ -56,5 +59,4 @@ public class TestApi {
 		response.prettyPrint();
 
 	}
-
 }

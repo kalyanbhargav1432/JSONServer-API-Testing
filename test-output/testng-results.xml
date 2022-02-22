@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-21T22:25:46 IST" name="Default suite" finished-at="2022-02-21T22:26:08 IST" duration-ms="22075">
+  <suite started-at="2022-02-22T22:54:26 IST" name="Default suite" finished-at="2022-02-22T22:54:44 IST" duration-ms="17466">
     <groups>
     </groups>
-    <test started-at="2022-02-21T22:25:46 IST" name="Default test" finished-at="2022-02-21T22:26:08 IST" duration-ms="22075">
-      <class name="com.bridgelabz.TestApi">
-        <test-method signature="getTest()[pri:0, instance:com.bridgelabz.TestApi@1e802ef9]" started-at="2022-02-21T22:25:47 IST" name="getTest" finished-at="2022-02-21T22:26:08 IST" duration-ms="20448" status="PASS">
+    <test started-at="2022-02-22T22:54:26 IST" name="Default test" finished-at="2022-02-22T22:54:44 IST" duration-ms="17466">
+      <class name="com.bridgelabz.TestApiBdd">
+        <test-method signature="deleteTest()[pri:0, instance:com.bridgelabz.TestApiBdd@6d2a209c]" started-at="2022-02-22T22:54:27 IST" name="deleteTest" finished-at="2022-02-22T22:54:43 IST" duration-ms="16364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTest -->
+        <test-method signature="getTest()[pri:0, instance:com.bridgelabz.TestApiBdd@6d2a209c]" started-at="2022-02-22T22:54:43 IST" name="getTest" finished-at="2022-02-22T22:54:43 IST" duration-ms="262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getTest -->
-      </class> <!-- com.bridgelabz.TestApi -->
+        <test-method signature="postTest()[pri:0, instance:com.bridgelabz.TestApiBdd@6d2a209c]" started-at="2022-02-22T22:54:43 IST" name="postTest" finished-at="2022-02-22T22:54:44 IST" duration-ms="224" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTest -->
+        <test-method signature="putTest()[pri:0, instance:com.bridgelabz.TestApiBdd@6d2a209c]" started-at="2022-02-22T22:54:44 IST" name="putTest" finished-at="2022-02-22T22:54:44 IST" duration-ms="151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putTest -->
+      </class> <!-- com.bridgelabz.TestApiBdd -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
