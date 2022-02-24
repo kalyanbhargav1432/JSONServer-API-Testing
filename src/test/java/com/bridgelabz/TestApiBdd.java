@@ -10,9 +10,7 @@ import io.restassured.specification.RequestSpecification;
 public class TestApiBdd {
 	@Test
 	public void getTest() {
-		RestAssured.given()
-		.when().get("http://localhost:3000/posts")
-		.then().assertThat().statusCode(200);
+		RestAssured.given().when().get("http://localhost:3000/posts").then().assertThat().statusCode(200);
 	}
 
 	@Test
@@ -23,12 +21,8 @@ public class TestApiBdd {
 		jsonObject.put("title", "kalyan Api");
 		jsonObject.put("author", "k");
 
-		RestAssured.given()
-		.header("Content-Type", "application/json")
-		.body(jsonObject.toJSONString())
-		.when()
-		.post("http://localhost:3000/posts")
-		.then().statusCode(201);
+		RestAssured.given().header("Content-Type", "application/json").body(jsonObject.toJSONString()).when()
+				.post("http://localhost:3000/posts").then().statusCode(201);
 	}
 
 	@Test
@@ -38,12 +32,8 @@ public class TestApiBdd {
 		jsonObject.put("title", "kalyanBhargav ");
 		jsonObject.put("author", "TK");
 
-		RestAssured.given()
-		.header("Content-Type", "application/json")
-		.body(jsonObject.toJSONString())
-		.when()
-		.put("http://localhost:3000/posts/13")
-		.then().statusCode(200);
+		RestAssured.given().header("Content-Type", "application/json").body(jsonObject.toJSONString()).when()
+				.put("http://localhost:3000/posts/13").then().statusCode(200);
 	}
 
 	@Test
@@ -51,12 +41,7 @@ public class TestApiBdd {
 
 		JSONObject jsonObject = new JSONObject();
 
-		RestAssured.given()
-		.header("Content-Type", "application/json")
-		.body(jsonObject.toJSONString())
-		.when()
-		.delete("http://localhost:3000/posts/3")
-		.then().statusCode(200);
+		RestAssured.given().header("Content-Type", "application/json").body(jsonObject.toJSONString()).when()
+				.delete("http://localhost:3000/posts/3").then().statusCode(200);
 	}
-
 }
