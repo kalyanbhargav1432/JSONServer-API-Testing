@@ -13,7 +13,7 @@ public class TwitterApiTest {
 				.oauth("TTQQO4y0DJGZLBU2LcU1VJECQ", "qkf8Rj3kggsjkvc2mF5sBLvE8k93ZL9Q74nPzKujFwJ8QAofoV",
 						"4003503614-NqJnAeZ2s6oHIPEWsNJnKDoKB4TtIPD2oOFUSuW",
 						"CsW3W4jEd4OarUqbqaJSSVzy808HEAB5uyGyZDA9QrLZR")
-				.post("https://api.twitter.com/1.1/statuses/update.json?status=kalyan first tweet in twitter");
+				.post("https://api.twitter.com/1.1/statuses/update.json?status=first tweet in twitter");
 
 		System.out.println("status code: " + response.getStatusCode());
 		System.out.println("time taken: " + response.getTime());
@@ -34,7 +34,7 @@ public class TwitterApiTest {
 				.oauth("TTQQO4y0DJGZLBU2LcU1VJECQ", "qkf8Rj3kggsjkvc2mF5sBLvE8k93ZL9Q74nPzKujFwJ8QAofoV",
 						"4003503614-NqJnAeZ2s6oHIPEWsNJnKDoKB4TtIPD2oOFUSuW",
 						"CsW3W4jEd4OarUqbqaJSSVzy808HEAB5uyGyZDA9QrLZR")
-				.post("https://twitter.com/TwitterDev/status/1496720869938589700");
+				.post("https://api.twitter.com/1.1/statuses/retweet/1496839739814838275.json");
 		System.out.println("status code: " + response.getStatusCode());
 		System.out.println("Response jason Body: " + response.jsonPath().prettyPrint());
 
@@ -47,7 +47,7 @@ public class TwitterApiTest {
 				.oauth("TTQQO4y0DJGZLBU2LcU1VJECQ", "qkf8Rj3kggsjkvc2mF5sBLvE8k93ZL9Q74nPzKujFwJ8QAofoV",
 						"4003503614-NqJnAeZ2s6oHIPEWsNJnKDoKB4TtIPD2oOFUSuW",
 						"CsW3W4jEd4OarUqbqaJSSVzy808HEAB5uyGyZDA9QrLZR")
-				.delete("https://api.twitter.com/2/tweets/1496720869938589700");
+				.delete("https://api.twitter.com/2/tweets/1496839739814838275");
 
 		System.out.println("Response code: " + response.getStatusCode());
 		response.prettyPrint();
