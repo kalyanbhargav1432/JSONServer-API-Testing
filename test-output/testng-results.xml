@@ -2,16 +2,16 @@
 <testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-24T11:11:06 IST" name="Default suite" finished-at="2022-02-24T11:11:14 IST" duration-ms="8346">
+  <suite started-at="2022-02-24T19:03:45 IST" name="Default suite" finished-at="2022-02-24T19:03:52 IST" duration-ms="6800">
     <groups>
     </groups>
-    <test started-at="2022-02-24T11:11:06 IST" name="Default test" finished-at="2022-02-24T11:11:14 IST" duration-ms="8346">
-      <class name="com.bridgelabz.TestTwitterApi">
-        <test-method signature="delete()[pri:0, instance:com.bridgelabz.TestTwitterApi@670002]" started-at="2022-02-24T11:11:06 IST" name="delete" finished-at="2022-02-24T11:11:14 IST" duration-ms="8206" status="PASS">
+    <test started-at="2022-02-24T19:03:45 IST" name="Default test" finished-at="2022-02-24T19:03:52 IST" duration-ms="6800">
+      <class name="com.bridgelabz.TwitterApiTest">
+        <test-method signature="delete()[pri:0, instance:com.bridgelabz.TwitterApiTest@670002]" started-at="2022-02-24T19:03:45 IST" name="delete" finished-at="2022-02-24T19:03:52 IST" duration-ms="6661" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- delete -->
-      </class> <!-- com.bridgelabz.TestTwitterApi -->
+      </class> <!-- com.bridgelabz.TwitterApiTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
