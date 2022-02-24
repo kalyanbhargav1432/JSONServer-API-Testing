@@ -15,7 +15,6 @@ public class TestApi {
 		Response response = RestAssured.get("http://localhost:3000/posts");
 		System.out.println("Response code: " + response.getStatusCode());
 		JsonPath jsonPath = response.jsonPath();
-		// response.prettyPrint();
 		System.out.println(" id : " + jsonPath.get("id"));
 		System.out.println(" title : " + jsonPath.get("title"));
 		System.out.println(" author : " + jsonPath.get("author"));

@@ -19,7 +19,7 @@ public class TestApiBdd {
 	public void postTest() {
 
 		JSONObject jsonObject = new JSONObject();
-		jsonObject.put("id", 14);
+		jsonObject.put("id", 4);
 		jsonObject.put("title", "kalyan Api");
 		jsonObject.put("author", "k");
 
@@ -36,13 +36,13 @@ public class TestApiBdd {
 
 		JSONObject jsonObject = new JSONObject();
 		jsonObject.put("title", "kalyanBhargav ");
-		jsonObject.put("author", "TBDK");
+		jsonObject.put("author", "TK");
 
 		RestAssured.given()
 		.header("Content-Type", "application/json")
 		.body(jsonObject.toJSONString())
 		.when()
-		.put("http://localhost:3000/posts/14")
+		.put("http://localhost:3000/posts/13")
 		.then().statusCode(200);
 	}
 
@@ -55,7 +55,7 @@ public class TestApiBdd {
 		.header("Content-Type", "application/json")
 		.body(jsonObject.toJSONString())
 		.when()
-		.delete("http://localhost:3000/posts/11")
+		.delete("http://localhost:3000/posts/3")
 		.then().statusCode(200);
 	}
 

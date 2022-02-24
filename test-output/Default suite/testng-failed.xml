@@ -5,8 +5,7 @@
     <classes>
       <class name="com.bridgelabz.TestApiBdd">
         <methods>
-          <include name="deleteTest"/>
-          <include name="postTest"/>
+          <include name="getTest"/>
         </methods>
       </class> <!-- com.bridgelabz.TestApiBdd -->
     </classes>
